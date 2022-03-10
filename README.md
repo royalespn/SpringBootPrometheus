@@ -1,4 +1,4 @@
-Refer the readme docs for detailed instruction
+Refer the readme.docs file attached for detailed instruction
 
 
 
