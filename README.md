@@ -69,7 +69,9 @@ We can collection various metrics exposed by Spring Boot application:
 Within the Path “actuator/prometheus” there are many interesting metrics
 
  ![image](https://user-images.githubusercontent.com/17970459/157605244-7b5ede9b-7d9c-40b6-9730-374078c047f5.png)
+
 ![image](https://user-images.githubusercontent.com/17970459/157605277-379925ab-6cf2-4bb7-a56c-668c7bdb917f.png)
+
 ![image](https://user-images.githubusercontent.com/17970459/157605299-0b71500f-ed0d-4427-ac41-6f56e19bc5be.png)
 
 
