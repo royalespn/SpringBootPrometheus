@@ -1,0 +1,12 @@
+route:
+  receiver: emailer
+receivers:
+  - name: emailer
+    email_configs:
+      - to: alert@synchronoss.com
+        from:  admin@synchronoss.com
+        smarthost: smtp.synchronoss.com:587
+        auth_username: "XXXXXX"
+        auth_identity: "XXXXX"
+        auth_password: "XXXXXXX"
+        require_tls: false

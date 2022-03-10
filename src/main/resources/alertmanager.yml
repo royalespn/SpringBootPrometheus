@@ -1,0 +1,12 @@
+route:
+  receiver: emailer
+receivers:
+  - name: emailer
+    email_configs:
+      - to: royalespn@gmail.com
+        from:  royalespn@gmail.com
+        smarthost: smtp.gmail.com:587
+        auth_username: "royalespn@gmail.com"
+        auth_identity: "royalespn@gmail.com"
+        auth_password: "XXXXXXX-XXXXX-XXX"
+        require_tls: false

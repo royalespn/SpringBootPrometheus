@@ -1,0 +1,18 @@
+groups:
+  - name: studentApi
+    rules:
+      - alert: RequestRate
+        expr:  rate(http_server_requests_seconds_count{uri="/api/v1/student", method="GET"}[5m]) > 0
+        for: 1m
+        labels:
+          severity: high
+        annotations:
+          summary: Application receiving too many requests
+      - alert: SVC down - whether the service is offline
+        expr: sum(up{job="SpringBoot-application-NAB-Cloud"}) == 0
+        for: 1m
+        labels:
+          severity: critical
+          Team: RHF the name of our group, corresponding to the label match above
+        annotations:
+          Summary: "the app service has been offline, please check!! "
