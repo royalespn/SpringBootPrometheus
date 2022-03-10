@@ -138,9 +138,13 @@ Another important component is the Alert Manager: that shows the list of alerts 
 
 
 Spring Boot’s Prometheus Metrics: http://localhost:8080/actuator/prometheus
+
 Prometheus Target Endpoints: http://localhost:9090/targets
+
 Prometheus Alerts: http://localhost:9090/alerts
+
 Grafana server: http://localhost:3000
+
 Alert Manager: http://localhost:9093
 
 GitHub Repo: https://github.com/royalespn/SpringBootPrometheus
