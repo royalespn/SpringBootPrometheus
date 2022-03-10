@@ -34,7 +34,9 @@ Run supporting services : docker-compose up
 
 
 7. The micrometer framework provides several types of the custom metrics or meters such as Counter, Gauge, Timer, DistributionSummary that you can use to create custom metrics
+
 ![image](https://user-images.githubusercontent.com/17970459/157605039-838ac5bd-5971-4b9c-8fe5-0837035c5c64.png)
+
 
 • Count the number of courses created using the Counter metric
 • Count the number of courses created using the Gauge metric. 
@@ -111,6 +113,7 @@ Alerts are generally included in a separate file, in our case it’s rules.yml
 
 Using the Alert Manager to signal Spring Boot metrics
 You can reach Prometheus Alert UI from Prometheus dashboard and see the configured alert
+
 ![image](https://user-images.githubusercontent.com/17970459/157605526-cc7afa4e-dbcb-4d17-92ac-616ecd5e73e6.png)
 
  
