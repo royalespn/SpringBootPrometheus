@@ -212,6 +212,9 @@ Rabbit-mq retric --> http://localhost:15692/metrics
 
 GitHub Repo: https://github.com/royalespn/SpringBootPrometheus
 
+GitHub: SpringBoot Scheduler: https://github.com/royalespn/SpringBootTaskScheduler
+
+
 Run the application : mvn spring-boot:run
 
 Run services : docker-compose up
