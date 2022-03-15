@@ -205,8 +205,12 @@ Grafana server: http://localhost:3000
 
 Alert Manager: http://localhost:9093
 
-GitHub Repo: https://github.com/royalespn/SpringBootPrometheus
+Pushgateway: http://localhost:9091 
 
+Rabbit-mq retric --> http://localhost:15692/metrics
+
+
+GitHub Repo: https://github.com/royalespn/SpringBootPrometheus
 Run the application : mvn spring-boot:run
 Run services : docker-compose up
  
