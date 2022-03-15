@@ -6,7 +6,12 @@ Run supporting services : docker-compose up
 
 
 ------------------
-![image](https://user-images.githubusercontent.com/17970459/157604730-3a264a2b-da15-40f9-a193-91015dac3848.png)
+![image](https://user-images.githubusercontent.com/17970459/158304230-0b3727fd-d12b-4db4-a3b2-bb19fc31a8a4.png)
+
+
+![image](https://user-images.githubusercontent.com/17970459/158304286-85e68079-4812-498a-b762-85a1f16a0c7f.png)
+
+
 
  
 
@@ -98,15 +103,63 @@ Grafana allows you to obtain data from various data sources such as Prometheus a
  ![image](https://user-images.githubusercontent.com/17970459/157605407-faf05fa6-511a-4761-8b6d-f9f6bce50c59.png)
 
  
+Prometheus Push Gateway : The Prometheus Pushgateway exists to allow ephemeral and batch jobs to expose their metrics to Prometheus. Since these kinds of jobs may not exist long enough to be scraped, they can instead push their metrics to a Pushgateway. The Pushgateway then exposes these metrics to Prometheus.
+
+![image](https://user-images.githubusercontent.com/17970459/158304429-74bbe18b-8613-40f2-917a-6829b56f63dc.png)
+
+
+![image](https://user-images.githubusercontent.com/17970459/158304446-90af2fa4-5e6d-4d6e-ab64-c199c0b09894.png)
+
+
+![image](https://user-images.githubusercontent.com/17970459/158304469-870d048d-ae79-4926-9fcf-93c5719d49ae.png)
 
 
 
 
-Alertmanager manages alerts sent by Prometheus server. It takes care of grouping alerts, and routing them to the correct receiver. For example an email receiver, pager, webhook, sms etc.
+
+
+
+**prometheus-simpleclient_log4j2** : It’s a Metrics collector for log4j2 appender logging. 
+
+To register the Logback collector can be added to the root level in log4j2-spring.xml file.
+
+![image](https://user-images.githubusercontent.com/17970459/158304583-416612fe-2dba-4416-89cb-e308a38c0a42.png)
+
+![image](https://user-images.githubusercontent.com/17970459/158304596-370b2b41-b124-4a4e-8dd7-425e596d2293.png)
+
+
+![image](https://user-images.githubusercontent.com/17970459/158304612-7e3b2b62-93f6-4ae6-9cad-1e09079d44f5.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Alertmanager manages** alerts sent by Prometheus server. It takes care of grouping alerts, and routing them to the correct receiver. For example an email receiver, pager, webhook, sms etc.
 
 Alerts are generally included in a separate file, in our case it’s rules.yml
 
  ![image](https://user-images.githubusercontent.com/17970459/157605469-86531a99-c0be-40e4-a153-a74a3c983396.png)
+
+
+**RabbitMQ metric exporter to Prometheus:**
+
+While RabbitMQ management UI also provides access to a subset of metrics, it by design doesn't try to be a long term metric collection solution. 
+
+As of 3.8.0, RabbitMQ ships with built-in Prometheus & Grafana support.
+
+With the rabbitmq_prometheus plugin, rabbitMq can ship metrics to default URL URL15692/metrics
+
+![image](https://user-images.githubusercontent.com/17970459/158304735-080e469b-f6c2-485a-a712-71532d5af47a.png)
 
 
 
