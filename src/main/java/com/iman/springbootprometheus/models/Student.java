@@ -1,4 +1,4 @@
-package com.tech552.springbootactuatordemo.models;
+package com.iman.springbootprometheus.models;
 
 import javax.persistence.*;
 

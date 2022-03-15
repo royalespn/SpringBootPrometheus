@@ -1,7 +1,7 @@
-package com.tech552.springbootactuatordemo.services;
+package com.iman.springbootprometheus.services;
 
-import com.tech552.springbootactuatordemo.models.Student;
-import com.tech552.springbootactuatordemo.repos.StudentRepository;
+import com.iman.springbootprometheus.models.Student;
+import com.iman.springbootprometheus.repos.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

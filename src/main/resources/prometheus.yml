@@ -7,6 +7,16 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
       - targets: ['host.docker.internal:8080']
+  - job_name: 'Pushgateway'
+    scrape_interval: 5s
+    honor_labels: true
+    static_configs:
+      - targets: ['host.docker.internal:9091']
+  - job_name: 'RabbitMQ'
+    metrics_path: '/metrics'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['host.docker.internal:15692']
 rule_files:
   - 'rules.yml'
 alerting:

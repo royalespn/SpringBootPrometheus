@@ -8,6 +8,8 @@ services:
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - ./rules.yml:/etc/prometheus/rules.yml
+    depends_on:
+      - pushgateway
     ports:
       - 9090:9090
   alertmanager:
@@ -24,3 +26,23 @@ services:
       - ./datasource.yml:/etc/grafana/provisioning/datasources/datasource.yml
     depends_on:
       - prometheus
+  pushgateway:
+    image: prom/pushgateway
+    command:
+      - '--web.listen-address=:9091'
+      - '--push.disable-consistency-check'
+      - '--persistence.interval=5m'
+    ports:
+      - 9091:9091
+  rabbitmq3:
+    container_name: "rabbitmq"
+    image: rabbitmq:latest
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+      - RABBITMQ_ERLANG_COOKIE=rabbitmq-prometheus
+    ports:
+      # AMQP protocol port
+      - '5672:5672'
+      # metric endpoint /metrics
+      - '15692:15692'

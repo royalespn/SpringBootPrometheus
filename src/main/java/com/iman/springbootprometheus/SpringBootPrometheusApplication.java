@@ -1,4 +1,4 @@
-package com.tech552.springbootactuatordemo;
+package com.iman.springbootprometheus;
 
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class SpringBootActuatorDemoApplication {
+public class SpringBootPrometheusApplication {
 
 	@Bean
 	MeterRegistryCustomizer<MeterRegistry> metricsCommonTags() {
@@ -30,7 +30,7 @@ public class SpringBootActuatorDemoApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootActuatorDemoApplication.class, args);
+		SpringApplication.run(SpringBootPrometheusApplication.class, args);
 	}
 
 }

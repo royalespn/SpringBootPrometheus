@@ -1,10 +1,10 @@
-package com.tech552.springbootactuatordemo;
+package com.iman.springbootprometheus;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootActuatorDemoApplicationTests {
+class SpringBootPrometheusApplicationTests {
 
 	@Test
 	void contextLoads() {

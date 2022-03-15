@@ -1,4 +1,4 @@
-package com.tech552.springbootactuatordemo.DbHealthIndicator;
+package com.iman.springbootprometheus.DbHealthIndicator;
 
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
