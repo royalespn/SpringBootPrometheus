@@ -211,6 +211,7 @@ Rabbit-mq retric --> http://localhost:15692/metrics
 
 
 GitHub Repo: https://github.com/royalespn/SpringBootPrometheus
+
 Run the application : mvn spring-boot:run
 Run services : docker-compose up
  
@@ -220,7 +221,7 @@ Prometheus: Up & Running by Brian Brazil by by Brian Brazil, ISBN: 9781492034148
 
 Spring Boot Actuautor: https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.metrics
 
-Extra : configure short lived job.
+
 
 
 
